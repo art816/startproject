@@ -8,7 +8,6 @@ class Heap(object):
         self.heap_list = ["Не используется"] + element_list 
         self.size = len(element_list)        
         print("Размер листа равен " + str(self.size)) 
-        print("А нулевой элемент равен " + str(self.heap_list[0]))
        
     def __repr__(self):
         result = "Список элементов в пирамиде:"
@@ -44,7 +43,12 @@ class Heap(object):
             self.heap_list[i] = self.heap_list[largest]
             self.heap_list[largest] = tmp
             self.max_heapify(largest)
-      
+
+    def build_max_heap(self):
+        self.size = len(self.heap_list)
+        for i in range(int(self.size / 2), 0, -1):
+            self.max_heapify(i)
+              
                 
 
 #Создаем пираммиду со случайным списком чисел    
@@ -54,6 +58,9 @@ print(main_heap)
 main_heap.max_heapify(2)
 
 print(main_heap)
-   
+
+main_heap.build_max_heap()
+
+print(main_heap)   
    
     
