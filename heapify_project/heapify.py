@@ -49,6 +49,8 @@ class Heap(object):
         self.size = len(self.heap_list) - 1
         for i in range(math.trunc(self.size / 2), 0, -1):
             print("Рассматриваем элемет %i" % (i))
+        self.size = len(self.heap_list)
+        for i in range(int(self.size / 2), 0, -1):
             self.max_heapify(i)
               
                 
