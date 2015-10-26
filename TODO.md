@@ -3,4 +3,6 @@
 - [ ] Лутц.
 - [ ] Кормен. Сделать пирамиду. стр140.
   - [x] Реализован метод max_heapify
+  - смотри коменты
 - [ ] Разработка через тестирование. Позже напишу книги.
+- [ ] [asserts](https://docs.python.org/3/library/unittest.html#unittest.TestCase)
