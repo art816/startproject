@@ -18,6 +18,8 @@ class TestHeapify(unittest.TestCase):
         for i in range(math.trunc(self.heap.size / 2), 2, -1):
             print("Рассматриваем элемет %i" % (i))
         for i in range(self.heap.size-1, 2, -1):
+        	#вместо ифа юзай ассерт
+        	# self.assertLess в todo ссылка
             if self.heap.heap_list[self.heap.parent(i)] < self.heap.heap_list[i]:
                 self.passed = bool(0)
                 print(self.heap)
