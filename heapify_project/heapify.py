@@ -1,10 +1,12 @@
+'''Main module of heapify_project'''
+from __future__ import print_function
 import random
-import math
+
 
 class Heap(object):
     '''Binary heap class'''
 
-    def __init__(self,  element_list=[]):
+    def __init__(self, element_list=None):
         '''Take a list of elements'''
         self.heap_list = ["Not used"] + element_list
         self.size = len(element_list)
@@ -29,14 +31,14 @@ class Heap(object):
 
 
     def max_heapify(self, i):
-        l = self.left(i)
-        r = self.right(i)
-        if l < self.size and self.heap_list[l] > self.heap_list[i]:
-            largest = l
+        left_element_pos = self.left(i)
+        right_element_pos = self.right(i)
+        if left_element_pos < self.size and self.heap_list[left_element_pos] > self.heap_list[i]:
+            largest = left_element_pos
         else:
             largest = i
-        if r < self.size and self.heap_list[r] > self.heap_list[largest]:
-            largest = r
+        if r < self.size and self.heap_list[right_element_pos] > self.heap_list[largest]:
+            largest = right_element_pos
         if largest != i:
             tmp = self.heap_list[i]
             self.heap_list[i] = self.heap_list[largest]
@@ -50,16 +52,12 @@ class Heap(object):
 
 
 if __name__ == '__main__':
-    main_heap = Heap(random.sample(range(100), 9))
-    print(main_heap)
-
-    main_heap.max_heapify(2)
-
-    print(main_heap)
-
-    main_heap.build_max_heap()
-
-    print(main_heap)
+    MAIN_HEAP = Heap(random.sample(range(100), 9))
+    print(MAIN_HEAP)
+    MAIN_HEAP.max_heapify(2)
+    print(MAIN_HEAP)
+    MAIN_HEAP.build_max_heap()
+    print(MAIN_HEAP)
 
 
 
