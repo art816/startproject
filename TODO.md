@@ -8,3 +8,7 @@
 - [ ] [asserts](https://docs.python.org/3/library/unittest.html#unittest.TestCase)
 - [ ] У тебя уже много методов в пирамаде, а тестируется только sort.
       Хорошая практика по тесту на метод. Конечно можно и комплексом тестировать как у тебя, но это не всегда хорошо.
+- [ ] Юзай Pylint. 
+-     Method could be a function (no-self-use)
+-     исправляется декаратором @staticmethod
+-     Остальное легко исправляется.
