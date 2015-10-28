@@ -1,8 +1,8 @@
  - heapify_project
     - heapify.py
-      - Класс Heap, методы max_heapify, build_max_heap
+      - Класс Heap, методы max_heapify, build_max_heap, heapsort
     - test_heapify.py
-      - Тест метода build_max_heap
+      - Тест метода heapsort
 
  - python_perl_listener
     - perl_listener.py
