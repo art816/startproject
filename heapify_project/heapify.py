@@ -49,7 +49,6 @@ class Heap(object):
             self.max_heapify(largest)
 
     def build_max_heap(self):
-        '''
         self.size = len(self.heap_list) - 1
         for i in range(int(self.size / 2), 1, -1):
             self.max_heapify(i)
