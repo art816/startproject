@@ -5,6 +5,9 @@
   - [x] Реализован метод max_heapify
   - смотри коменты
 - [ ] Разработка через тестирование. Позже напишу книги.
+  - Test driven development by example. K Beck
+  - https://vk.com/away.php?to=http%3A%2F%2Fprogrammers.stackexchange.com%2Fquestions%2F57271%2Fwhat-are-the-best-resources-for-learning-tdd
+  - https://vk.com/away.php?to=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F797026%2Ftest-driven-development-book
 - [ ] [asserts](https://docs.python.org/3/library/unittest.html#unittest.TestCase)
 - [ ] У тебя уже много методов в пирамаде, а тестируется только sort.
       Хорошая практика по тесту на метод. Конечно можно и комплексом тестировать как у тебя, но это не всегда хорошо.
