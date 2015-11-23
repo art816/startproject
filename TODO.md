@@ -1,0 +1,17 @@
+- [x] Склонировать свой репозиторий и сделать коммит из Windows
+- [ ] [PIP8](https://www.python.org/dev/peps/pep-0008/)
+- [ ] Лутц.
+- [ ] Кормен. Сделать пирамиду. стр140.
+  - [x] Реализован метод max_heapify
+  - смотри коменты
+- [ ] Разработка через тестирование. Позже напишу книги.
+  - Test driven development by example. K Beck
+  - https://vk.com/away.php?to=http%3A%2F%2Fprogrammers.stackexchange.com%2Fquestions%2F57271%2Fwhat-are-the-best-resources-for-learning-tdd
+  - https://vk.com/away.php?to=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F797026%2Ftest-driven-development-book
+- [ ] [asserts](https://docs.python.org/3/library/unittest.html#unittest.TestCase)
+- [ ] У тебя уже много методов в пирамаде, а тестируется только sort.
+      Хорошая практика по тесту на метод. Конечно можно и комплексом тестировать как у тебя, но это не всегда хорошо.
+- [ ] Юзай Pylint. 
+-     Method could be a function (no-self-use)
+-     исправляется декаратором @staticmethod
+-     Остальное легко исправляется.
